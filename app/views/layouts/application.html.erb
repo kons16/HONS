@@ -10,18 +10,10 @@
 
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "ランキング",   '#' %></li>
-            <li><%= link_to "ログイン", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <div class="container">
-      <%= yield %>
+      <h1><div class="tname">HONS</div></h1>
+      <%= link_to "新規登録", '#', class: "btn" %>
+      <%= render 'layouts/header' %>
     </div>
   </body>
 </html>
