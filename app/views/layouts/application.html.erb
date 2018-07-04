@@ -10,10 +10,8 @@
 
   </head>
   <body>
-    <div class="container">
-      <h1><div class="tname">HONS</div></h1>
-      <%= link_to "新規登録", '#', class: "btn" %>
-      <%= render 'layouts/header' %>
-    </div>
+    <%= render 'layouts/header' %>
+    <%= yield %>
   </body>
+  
 </html>

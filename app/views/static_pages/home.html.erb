@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>  
-  <h1><div class:"tname">HONS</div></h1>
-  <%= link_to "新規登録", '#', class: "btn" %>
+  <head>
+    <title>HONS</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                               'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application',
+                               'data-turbolinks-track': 'reload' %>
+
   </head>
   <body>
-    <%= render 'layouts/header' %>
+    <div class="container">
+      <h1><div class="tname">HONS</div></h1>
+      <%= link_to "新規登録", signup_path, class: "btn" %>
+      <%= render 'layouts/header' %>
+    </div>
   </body>
   
 </html>
