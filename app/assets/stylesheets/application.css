@@ -98,3 +98,15 @@ input[type="password"] {
     padding: 4px;
     font-size: 14px;
 }
+
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
