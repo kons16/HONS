@@ -1,19 +1,15 @@
 class BookController < ApplicationController
   
   def show
-    Amazon::Ecs.options = {
-      :associate_tag         => ENV['associate_tag'],
-      :AWS_access_key_id     => ENV['AWS_access_key_id'],
-      :AWS_secret_key        => ENV['AWS_secret_key']
-    }
-    
-    books = Amazon::Ecs.item_search( 'ruby',
-                                      search_index:  'Books',
-                                      dataType: 'script',
-                                      response_group: 'ItemAttributes, Images',
-                                      country:  'jp',
-                                      power: "Not kindle")
-                                           
+    books = Amazon::Ecs.item_search(
+          '', #=> browse_node 指定時にはキーワードは省略可
+          :search_index => 'Books',
+          :BrowseNode  => '2292699051',
+          :response_group=>"ItemAttributes, Images", 
+          :country => 'jp', 
+          :sort => "salesrank",
+    )
+                              
     # 本のタイトル,画像URL, 詳細ページURLの取得
     @books = []
     books.items.each do |item|
