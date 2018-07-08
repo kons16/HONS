@@ -1,8 +1,9 @@
 <div class="itemposition">
-<h1>新規登録</h1>
-    <%= form_for(@user, url: signup_path) do |f| %>
-    <%= render 'shared/error_messages' %>
-    
+<h1>アカウント情報の変更</h1>
+  
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
     <p class="name">
       <%= f.label :名前 %>
       <%= f.text_field :name, class: 'form-control' %>
@@ -23,6 +24,7 @@
       <%= f.password_field :password_confirmation, class: 'form-control' %>
     </p>
 
-      <%= f.submit "新規登録", class: "btn_new" %>
+      <%= f.submit "変更を保存", class: "btn btn-primary" %>
     <% end %>
+
 </div>

@@ -1,8 +1,9 @@
 <div class="header">
 
     <% if logged_in? %>
-        <%= link_to "私の本棚", current_user, class: "hitem" %>
         <%= link_to "ログアウト", logout_path, method: :delete, class: "hitem" %>
+        <%= link_to "アカウント設定", edit_user_path(current_user), class: "hitem" %>
+        <%= link_to "私の本棚", current_user, class: "hitem" %>
     <% else %>
         <%= link_to "ログイン", login_path, class: "hitem" %>
     <% end %>
