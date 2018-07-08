@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:edit, :update]
-  before_action :correct_user,   only: [:edit, :update]
+  before_action :logged_in_user, only: [:show, :edit, :update]
+  before_action :correct_user,   only: [:show, :edit, :update]
 
   def show
     @user = User.find(params[:id])
@@ -22,11 +22,9 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = User.find(params[:id])
   end
   
   def update
-    @user = User.find(params[:id])
     if @user.update_attributes(user_params)
       #更新に成功した場合
       redirect_to @user
