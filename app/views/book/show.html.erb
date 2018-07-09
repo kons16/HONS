@@ -1,11 +1,10 @@
 <dic class="itemposition">
 Amazon 書籍ランキング
-<% if @books.present? %>
-  <% @books.each do |book| %>
+<% if @booksrank.present? %>
+  <% @booksrank.each do |book| %>
     <div class="list">
       <%= link_to (image_tag(book.image_url, style: "width: 70px;height: 100px;display: inline-block;")), book.url %><br />
       <%= book.title %>
-      
     </div>
   <% end %>
 <% end %>
