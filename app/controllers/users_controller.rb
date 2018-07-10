@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def new
@@ -20,6 +21,7 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+
   
   def edit
   end
@@ -33,48 +35,13 @@ class UsersController < ApplicationController
     end
   end
   
-  def add
-    if params[:keyword].present?
-      #　デバックログ出力するために記述
-      Amazon::Ecs.debug = true
 
-      # Amazon::Ecs::Responceオブジェクトの取得
-      books = Amazon::Ecs.item_search(
-        params[:keyword],
-        search_index:  'Books',
-        dataType: 'script',
-        response_group: 'ItemAttributes, Images',
-        country:  'jp',
-        power: "Not kindle"
-      )
-
-      # 本のタイトル,画像URL, 詳細ページURLの取得
-      @books = []
-      books.items.each do |item|
-        book = Book.new(
-          item.get('ItemAttributes/Title'),
-          item.get('LargeImage/URL'),
-          item.get('DetailPageURL'),
-        )
-        @books << book
-      end
-    end
-  end
 
   private
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
-    end
-    
-    # beforeアクション
-    # ログイン済みユーザーかどうか確認
-    def logged_in_user
-      unless logged_in?
-        store_location
-        redirect_to login_url
-      end
     end
     
     # 正しいユーザーかどうか確認

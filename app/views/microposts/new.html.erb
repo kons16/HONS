@@ -1,0 +1,13 @@
+<div class='itemposition'>
+  <div id="search-box">
+    <%= form_tag(new_micropost_path, method: :get) do %>
+        <%= text_field_tag :book, "",  id: "book_add_form", name: "keyword", autocomplete:"off", placeholder: "キーワードを入力してください", style: "width: 200px;"%>
+        <button title="検索" type="submit">検索</button>
+
+    <% end %>
+
+  </div>
+  <div id='book_list'>
+   <%= render partial: 'book_list' %>
+  </div>
+</div>
