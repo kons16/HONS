@@ -1,5 +1,6 @@
-
-<%= link_to(image_tag(micropost.imagecont, style: "width: 70px;height: 100px;display: inline-block;"), micropost.content, class:"imgbook") %>
-<%= micropost.title.truncate(30)  %>
-<%= link_to "削除", micropost, method: :delete %>
-<br />
+<article id="list">
+  <figure>
+  <%= link_to(image_tag(micropost.imagecont, style: "width: 70px;height: 100px;display: inline-block;"), micropost.content, class:"imgbook") %>
+  <figcaption><%= micropost.title.truncate(20) %><%= link_to "削除", micropost, method: :delete %></figcaption>
+  </figure>
+</article>

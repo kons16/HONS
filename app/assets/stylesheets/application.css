@@ -14,6 +14,7 @@
  *= require_self
  */
  
+ 
 body {
   margin:0;
   padding:0;
@@ -111,7 +112,13 @@ input[type="password"] {
   margin-left: 0;
 }
 
-.imgbook {
-  position:relative;
-  top:60px;
+
+#list {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-column-gap: 20px;
+}
+
+#list figcaption {
+  width: 150px;
 }
