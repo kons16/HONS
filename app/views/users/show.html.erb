@@ -4,7 +4,9 @@
   <%= link_to "ユーザーを検索", "#", class: "btn" %><br />
   
   <% if @user.microposts.any? %>
-        <p><%= render @microposts %></p>
+    <article id="list">
+        <%= render @microposts %>
+    </article>
   <% end %>
   
 </div>
