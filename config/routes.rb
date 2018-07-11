@@ -7,7 +7,12 @@ Rails.application.routes.draw do
     get     'sessions/new'
     get     '/signup',  to: 'users#new'
     post    '/signup',  to: 'users#create'
-
+    
+    resources :microposts do
+        member do
+            get 'add'
+        end
+    end
     
     get     '/login',   to: 'sessions#new'
     post    '/login',   to: 'sessions#create'

@@ -111,3 +111,7 @@ input[type="password"] {
   margin-left: 0;
 }
 
+.imgbook {
+  position:relative;
+  top:60px;
+}
