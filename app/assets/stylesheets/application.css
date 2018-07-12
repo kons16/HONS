@@ -60,6 +60,35 @@ body {
   background-color: #59b1eb;
 }
 
+.addbookbtn {
+  position:relative;
+  left: 450px;
+  text-decoration:none;
+  font-size: 1.4em;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+}
+.addbookbtn:hover {
+  background-color: #59b1eb;
+}
+
+.searchuser {
+  position:relative;
+  left: 450px;
+  text-decoration:none;
+  font-size: 1.4em;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+}
+.searchuser:hover {
+  background-color: #59b1eb;
+}
+
+
 
 .debug_dump {
   clear: both;
@@ -115,10 +144,10 @@ input[type="password"] {
 
 #list {
   display: grid;
-  grid-template-columns: repeat(3, 150px);
+  grid-template-columns: repeat(5, 100px);
   grid-column-gap: 20px;
 }
 
 #list figcaption {
-  width: 150px;
+  width: 100px;
 }

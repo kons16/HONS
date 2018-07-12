@@ -1,7 +1,7 @@
 <div class="itemposition">
   <%= @user.name %>さんの本棚
-  <%= link_to "本を追加", new_micropost_path, class: "btn" %>
-  <%= link_to "ユーザーを検索", "#", class: "btn" %><br />
+  <%= link_to "本を追加", new_micropost_path, class: "addbookbtn" %>
+  <%= link_to "ユーザーを検索", "#", class: "searchuser" %><br />
   
   <% if @user.microposts.any? %>
     <article id="list">

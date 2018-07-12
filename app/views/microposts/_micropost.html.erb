@@ -1,4 +1,4 @@
 <figure>
   <%= link_to(image_tag(micropost.imagecont, style: "width: 70px;height: 100px;display: inline-block;"), micropost.content) %>
-  <figcaption><%= micropost.title.truncate(20) %><%= link_to "削除", micropost, method: :delete %></figcaption>
+  <figcaption><%= micropost.title.gsub(/\(.+?\)/, "").truncate(15) %><%= link_to "削除", micropost, method: :delete %></figcaption>
 </figure>
