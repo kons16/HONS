@@ -38,6 +38,12 @@ class UsersController < ApplicationController
     end
   end
   
+  # 本をクリックしたときに情報を表示する
+  def bookshow
+    @micropost = Micropost.new
+    @micropost = Micropost.find_by(id: params[:format])
+  end
+  
 
 
   private
