@@ -18,7 +18,7 @@ class UsersController < ApplicationController
       flash[:notice]="新規登録が完了しました"
       redirect_to @user
     else
-      render 'new'
+      
     end
   end
   
@@ -40,8 +40,7 @@ class UsersController < ApplicationController
   
   # 本をクリックしたときに情報を表示する
   def bookshow
-    @micropost = Micropost.new
-    @micropost = Micropost.find_by(id: params[:format])
+    @mybook = params[:booktitle]
   end
   
 
