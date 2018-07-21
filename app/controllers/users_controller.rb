@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: [:show, :edit, :update, :add]
   before_action :correct_user,   only: [:show, :edit, :update, :add]
+  
 
   def show
     @user = User.find(params[:id])
@@ -38,11 +39,10 @@ class UsersController < ApplicationController
     end
   end
   
-  # 本をクリックしたときに情報を表示する
   def bookshow
-    @mybook = params[:booktitle]
+    booktitle = params[:booktitle]
+    provide(:booktitle, booktitle)
   end
-  
 
 
   private

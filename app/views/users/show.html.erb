@@ -8,9 +8,7 @@
         <%= render @microposts %>
     </article>
     
-    <% if @user.mybook.any? %>
-      <%= render 'bookshow' %>
-    <% end %>
+    <%= yield(:booktitle) %>
     
   <% end %>
   
