@@ -40,7 +40,9 @@ class UsersController < ApplicationController
   end
   
   def bookshow
-    
+    @booktitle = params[:booktitle]
+    results = { :message => post_text }
+    render partial: 'bookshow', locals: { :results => results }
   end
 
 
