@@ -40,8 +40,7 @@ class UsersController < ApplicationController
   end
   
   def bookshow
-    booktitle = params[:booktitle]
-    provide(:booktitle, booktitle)
+    
   end
 
 
