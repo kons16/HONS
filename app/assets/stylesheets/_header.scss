@@ -9,9 +9,14 @@
 }
 
 .hitem {
-      float: right;
-      margin-left: 100px;
-      color: #fff;
-      font-size: 17px;
-      text-decoration: none;
+  float: right;
+  margin-left: 100px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.hitem:hover {
+  background-color: #59b1eb;
+  text-decoration: none;
 }
