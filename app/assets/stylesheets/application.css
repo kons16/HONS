@@ -156,12 +156,21 @@ input[type="password"] {
   height: 60px;
 }
 
-#remote {
+#bookimg {
   position: absolute;
-  right: 100px;
+  right: 400px;
   top: 80px;
   font-size: 120%;
   font-weight: bold;
+}
+
+#booktitle {
+  position: absolute;
+  right: 180px;
+  top: 90px;
+  font-size: 120%;
+  font-weight: bold;
+  word-break : break-all;
 }
 
 

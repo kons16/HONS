@@ -1,4 +1,4 @@
 <figure>
-  <%= link_to(image_tag(micropost.imagecont, style: "width: 70px;height: 100px;display: inline-block;"), bookshow_user_path(:id => current_user, :booktitle => micropost.title), remote: true) %>
+  <%= link_to(image_tag(micropost.imagecont, style: "width: 70px;height: 100px;display: inline-block;"), bookshow_user_path(:id => current_user, :booktitle => micropost.title, :bookimg => micropost.imagecont), remote: true) %>
   <figcaption><div class="bookname"><%= micropost.title.gsub(/\(.+?\)/, "").truncate(15) %></div><%= link_to "削除", micropost, method: :delete %></figcaption>
 </figure>

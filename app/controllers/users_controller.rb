@@ -42,6 +42,7 @@ class UsersController < ApplicationController
   
   def bookshow
     @booktitle = params[:booktitle]
+    @bookimg = params[:bookimg]
   end
 
 
