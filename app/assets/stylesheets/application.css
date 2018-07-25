@@ -166,11 +166,10 @@ input[type="password"] {
 
 #booktitle {
   position: absolute;
-  right: 180px;
-  top: 90px;
+  right: 400px;
+  top: 370px;
   font-size: 120%;
   font-weight: bold;
-  word-break : break-all;
 }
 
 
