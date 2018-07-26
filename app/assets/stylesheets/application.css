@@ -109,6 +109,7 @@ body {
 .btn_new {
   position:relative;;
   top:80px;
+  height: 50px;
   text-decoration:none;
   font-size: 1.4em;
   padding: 10px 30px;
@@ -120,16 +121,15 @@ body {
   background-color: #59b1eb;
 }
 
-.mail,.pass, .name{
-    height: 20px;
-    margin-bottom: 20px;
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  height: 30px;
+  width: 20%;
+  margin-bottom: 15px;
 }
 
-input[type="email"],
-input[type="password"] {
-    width: 300px;
-    padding: 4px;
-    font-size: 14px;
+input {
+  height: 30px;
 }
 
 
@@ -147,7 +147,8 @@ input[type="password"] {
 
 #list {
   display: grid;
-  grid-template-columns: repeat(6, 100px);
+  padding-left: 20px;
+  grid-template-columns: repeat(6, 90px);
   grid-column-gap: 20px;
 }
 

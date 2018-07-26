@@ -1,13 +1,17 @@
 <div class="itemposition">
-<h1>Log in</h1>
-
+<h1>ログイン</h1>
+<br /><br />
   <%= form_for(:session, url: login_path) do |f| %>
-
-    <%= f.label :メールアドレス %>
-    <%= f.email_field :email, class: 'form-control' %>
-
-    <%= f.label :パスワード %>
-    <%= f.password_field :password, class: 'form-control' %>
+  
+    <p>
+    <%= f.label :メールアドレス %><br />
+    <%= f.email_field :email%>
+    </p>
+    
+    <p>
+    <%= f.label :パスワード %><br />
+    <%= f.password_field :password%>
+    </p>
     
     <%= f.label :remember_me, class: "checkbox inline" do %>
       <%= f.check_box :remember_me %>

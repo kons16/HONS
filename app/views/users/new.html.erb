@@ -1,28 +1,31 @@
 <div class="itemposition">
 <h1>新規登録</h1>
+<br /><br />
     <%= form_for(@user, url: signup_path) do |f| %>
     <%= render 'shared/error_messages' %>
-    
-    <p class="name">
-      <%= f.label :ユーザー名 %>
-      <%= f.text_field :name, class: 'form-control' %>
-    </p>
       
-    <p class="mail">
-      <%= f.label :メールアドレス %>
-      <%= f.text_field :email, class: 'form-control' %>
-    </p>
+      <p>
+      <%= f.label :ユーザー名 %><br />
+      <%= f.text_field :name %>
+      </p>
+      
+      <p>
+      <%= f.label :メールアドレス %><br />
+      <%= f.text_field :email %>
+      </p>
+      
+      <p>
+      <%= f.label :パスワード %><br />
+      <%= f.password_field :password %>
+      </p>
 
-    <p class="pass">
-      <%= f.label :パスワード %>
-      <%= f.password_field :password, class: 'form-control' %>
-    </p>
-
-    <p class="pass">
-      <%= f.label :password_confirmation, "パスワード(確認)" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
-    </p>
+      <p>
+      <%= f.label :password_confirmation, "パスワード(確認)" %><br />
+      <%= f.password_field :password_confirmation %>
+      </p>
 
       <%= f.submit "新規登録", class: "btn_new" %>
+      
+      
     <% end %>
 </div>
