@@ -182,3 +182,11 @@ input {
   height: 100px;
   width: 750px;
 }
+
+
+/* ○○さんの本棚 */
+.nameshelf {
+  position: relative;
+  right: 380px;
+  font-weight: bold;
+}

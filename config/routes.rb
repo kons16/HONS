@@ -24,6 +24,8 @@ Rails.application.routes.draw do
     post    '/login',   to: 'sessions#create'
     delete  '/logout',  to: 'sessions#destroy'
     
+    delete  '/users/:id/bookshow',  to: 'microposts#destroy'
+    
     get '/ranking', to: 'book#show'
     
 end
