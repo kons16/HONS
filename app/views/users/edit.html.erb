@@ -1,30 +1,31 @@
 <div class="itemposition">
 <h1>アカウント情報の変更</h1>
-  
+<br /><br />
+
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
 
     <p class="name">
-      <%= f.label :ユーザー名 %>
-      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.label :ユーザー名 %><br />
+      <%= f.text_field :name %>
     </p>
       
     <p class="mail">
-      <%= f.label :メールアドレス %>
-      <%= f.text_field :email, class: 'form-control' %>
+      <%= f.label :メールアドレス %><br />
+      <%= f.text_field :email %>
     </p>
 
     <p class="pass">
-      <%= f.label :パスワード %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <%= f.label :パスワード %><br />
+      <%= f.password_field :password %>
     </p>
 
     <p class="pass">
-      <%= f.label :password_confirmation, "パスワード(確認)" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <%= f.label :password_confirmation, "パスワード(確認)" %><br />
+      <%= f.password_field :password_confirmation %>
     </p>
 
-      <%= f.submit "変更を保存", class: "btn btn-primary" %>
+      <%= f.submit "変更を保存", class: "btn_new" %>
     <% end %>
 
 </div>
