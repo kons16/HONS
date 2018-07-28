@@ -1,6 +1,7 @@
 <div class="header">
 
     <% if logged_in? %>
+        <%= link_to "HONS", root_path, class: "top_to" %>
         <%= link_to "ログアウト", logout_path, method: :delete, class: "hitem" %>
         <%= link_to "アカウント設定", edit_user_path(current_user), class: "hitem" %>
         <%= link_to "ランキング", ranking_path, class: "hitem" %>

@@ -54,7 +54,7 @@ class MicropostsController < ApplicationController
   
   def add
   end
-
+  
 
   private
 
