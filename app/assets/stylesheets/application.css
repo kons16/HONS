@@ -211,3 +211,19 @@ input {
   top: -21px;
   font-weight: bold;
 }
+
+
+/* ホーム画面のアイコン */
+.icon {
+  position: relative;
+  top: 95px;
+  right: 150px;
+}
+
+/*　ホームのタイトル  */
+.titlename {
+  position:relative;
+  left: 40px;
+  color: #33CC66;
+  font-size: 100px;
+}
