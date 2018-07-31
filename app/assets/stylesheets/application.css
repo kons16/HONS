@@ -185,8 +185,8 @@ input {
 }
 
 .pagecon {
-  position: relative;
-  top: -30px;
+  position: absolute;
+  top: 590px;
   width: 750px;
 }
 
@@ -229,35 +229,35 @@ input {
 }
 
 hr.s1 {
-   position: relative;
+   position: absolute;
    height: 4px;
    background-color: #D2691E;
    border-radius: 20px;
    width: 53%;
-   right: 320px;
-   top: -480px;
+   left: 15px;
+   top: 210px;
    border: none;
 }
 
 hr.s2 {
-   position: relative;
+   position: absolute;
    height: 4px;
    background-color: #D2691E;
    border-radius: 20px;
    width: 53%;
-   right: 320px;
-   top: -330px;
+   left: 15px;
+   top: 390px;
    border: none;
 }
 
 hr.s3 {
-   position: relative;
+   position: absolute;
    height: 4px;
    background-color: #D2691E;
    border-radius: 20px;
    width: 53%;
-   right: 320px;
-   top: -180px;
+   left: 15px;
+   top: 570px;
    border: none;
 }
 
