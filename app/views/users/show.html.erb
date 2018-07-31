@@ -10,16 +10,21 @@
         <%= render @microposts %>
     </article>
     
-    <div class='pagecon'><%= will_paginate @microposts, renderer: BootstrapPagination::Rails,  previous_label: '&#8592; &nbsp;前', next_label: '次 &#8594;',
+    <div class='pagecon'><%= will_paginate @microposts, renderer: BootstrapPagination::Rails,  previous_label: '&#8592; &nbsp;前の棚', next_label: '次の棚 &#8594;',
     inner_window: 1, outer_window: 0 %></div>
     
   <% end %>
   
+  <hr class="s1">
+  <hr class="s2">
+  <hr class="s3">
   
-  <div id='remote'>
-  </div>
+  <div class="box">
+    <div id='remote'>
+    </div>
   
-  <div id='remote2'>
+    <div id='remote2'>
+    </div>
   </div>
   
 </div>

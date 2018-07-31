@@ -152,7 +152,7 @@ input {
 #list {
   display: grid;
   padding-left: 20px;
-  grid-template-columns: repeat(6, 90px);
+  grid-template-columns: repeat(7, 90px);
   grid-column-gap: 20px;
 }
 
@@ -226,4 +226,50 @@ input {
   left: 40px;
   color: #33CC66;
   font-size: 100px;
+}
+
+hr.s1 {
+   position: relative;
+   height: 4px;
+   background-color: #D2691E;
+   border-radius: 20px;
+   width: 53%;
+   right: 320px;
+   top: -480px;
+   border: none;
+}
+
+hr.s2 {
+   position: relative;
+   height: 4px;
+   background-color: #D2691E;
+   border-radius: 20px;
+   width: 53%;
+   right: 320px;
+   top: -330px;
+   border: none;
+}
+
+hr.s3 {
+   position: relative;
+   height: 4px;
+   background-color: #D2691E;
+   border-radius: 20px;
+   width: 53%;
+   right: 320px;
+   top: -190px;
+   border: none;
+}
+
+.box {
+    position: relative;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    width: 600px;
+    top: -710px;
+    left: 820px;
+    height: 500px;
+    border: solid 3px #D2691E;/*線*/
+    border-radius: 10px;/*角の丸み*/
 }
