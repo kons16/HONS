@@ -69,11 +69,25 @@ body {
   font-size: 1.4em;
   padding: 10px 30px;
   border-radius: 10px;
-  background-color: #333;
+  background-color: #996633;
+  color: #fff;
+}
+
+.addbookbtn {
+  position: relative;
+  z-index: 2;
+  top: 572px;
+  left: -600px;
+  text-decoration:none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #996633;
   color: #fff;
 }
 .addbookbtn:hover {
-  background-color: #59b1eb;
+  background-color: #CC6600;
+  color: #fff;
   text-decoration: none;
 }
 
