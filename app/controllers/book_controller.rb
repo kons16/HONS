@@ -4,7 +4,7 @@ class BookController < ApplicationController
     bookrank = Amazon::Ecs.item_search(
           '', #=> browse_node 指定時にはキーワードは省略可
           :search_index => 'Books',
-          :BrowseNode  => '2292699051',
+          :BrowseNode  => '5364238051',
           :response_group=>"ItemAttributes, Images", 
           :country => 'jp', 
           :sort => "salesrank",
