@@ -1,15 +1,32 @@
-<div class="header">
-
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">HONS</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
     <% if logged_in? %>
-        <%= image_tag '/images/headericon.png', :size =>'32x22', class: "header_icon" %>
-        <%= link_to "HONS", root_path, class: "top_to" %>
-        <%= link_to "ログアウト", logout_path, method: :delete, class: "hitem" %>
-        <%= link_to "アカウント設定", edit_user_path(current_user), class: "hitem" %>
-        <%= link_to "ランキング", ranking_path, class: "hitem" %>
-        <%= link_to "本棚", current_user, class: "hitem" %>
-    <% else %>
-        <%= link_to "ログイン", login_path, class: "hitem" %>
-        <%= link_to "ランキング", ranking_path, class: "hitem" %>
+        <nav>
+            <div id="gnavi" class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+               <li><%= link_to "本棚", current_user%></li>
+               <li><%= link_to "ランキング", ranking_path%></li>
+               <li><%= link_to "アカウント設定", edit_user_path(current_user)%></li>
+               <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+            <% else %>
+                <li><%= link_to "ログイン", login_path%></li>
+                <li><%= link_to "ランキング", ranking_path%></li>
+            </ul>
+            </div>
+        </nav>
     <% end %>
-        
-</div>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

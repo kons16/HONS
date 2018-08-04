@@ -33,11 +33,16 @@ body {
 }
 
 
+
 .itemposition {
   position:relative;
   top:80px;
 }
 
+.showposition {
+  position:relative;
+  top:60px;
+}
 
 .tname {
   position:relative;
