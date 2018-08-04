@@ -1,8 +1,10 @@
 /* header */
-.navbar-default {
-  background-color: #cccccc;
-}
 
 .navbar-right{
   text-align: right;
+}
+
+.navbar-brand{
+  position: relative;
+  left: -100px;
 }
