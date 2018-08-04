@@ -14,9 +14,9 @@
             <div id="gnavi" class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
                   <% if logged_in? %>
-                    <li><%= link_to "本棚", current_user%></li>
-                    <li><%= link_to "ランキング", ranking_path%></li>
-                    <li><%= link_to "アカウント設定", edit_user_path(current_user)%></li>
+                    <li><%= link_to "本棚", current_user %></li>
+                    <li><%= link_to "ランキング", ranking_path %></li>
+                    <li><%= link_to "アカウント設定", edit_user_path(current_user) %></li>
                     <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
                   <% else %>
                     <li><%= link_to "ログイン", login_path%></li>
