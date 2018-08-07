@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     
     get     '/login',   to: 'sessions#new'
     post    '/login',   to: 'sessions#create'
+    get     '/contact', to: 'static_pages#contact'
     delete  '/logout',  to: 'sessions#destroy'
     
     delete  '/users/:id/bookshow',  to: 'microposts#destroy'

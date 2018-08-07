@@ -67,21 +67,11 @@ body {
   text-decoration: none;
 }
 
-.addbookbtn {
-  position:relative;
-  left: 450px;
-  text-decoration:none;
-  font-size: 1.4em;
-  padding: 10px 30px;
-  border-radius: 10px;
-  background-color: #996633;
-  color: #fff;
-}
 
 .addbookbtn {
   position: relative;
   z-index: 2;
-  top: 572px;
+  top: 552px;
   left: -600px;
   text-decoration:none;
   padding: 8px 20px;
@@ -169,7 +159,9 @@ input {
 
 
 #list {
+  position: relative;
   display: grid;
+  top: -10px;
   padding-left: 20px;
   grid-template-columns: repeat(7, 90px);
   grid-column-gap: 20px;
@@ -205,7 +197,7 @@ input {
 
 .pagecon {
   position: absolute;
-  top: 590px;
+  top: 570px;
   width: 750px;
 }
 
@@ -254,7 +246,7 @@ hr.s1 {
    border-radius: 20px;
    width: 53%;
    left: 15px;
-   top: 210px;
+   top: 190px;
    border: none;
 }
 
@@ -265,7 +257,7 @@ hr.s2 {
    border-radius: 20px;
    width: 53%;
    left: 15px;
-   top: 390px;
+   top: 370px;
    border: none;
 }
 
@@ -276,7 +268,7 @@ hr.s3 {
    border-radius: 20px;
    width: 53%;
    left: 15px;
-   top: 570px;
+   top: 550px;
    border: none;
 }
 
