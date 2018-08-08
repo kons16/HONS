@@ -43,6 +43,9 @@ class UsersController < ApplicationController
   def bookshow
     @booktitle = params[:booktitle]
     @bookimg = params[:bookimg]
+  end
+  
+  def bookreview
     @url = params[:bookurl]
     
     agent = Mechanize.new
@@ -54,7 +57,6 @@ class UsersController < ApplicationController
     # 著者
     a = page.search('//td[@class="a-size-base"]')
     @author = a.search('//span[@class="a-size-medium"]')
-    
   end
 
 

@@ -18,6 +18,9 @@ Rails.application.routes.draw do
         member do
             get 'bookshow'
         end
+        member do
+            get 'bookreview'
+        end
     end
     
     
