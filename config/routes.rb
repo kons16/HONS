@@ -22,10 +22,7 @@ Rails.application.routes.draw do
             get 'bookreview'
         end
     end
-    
-    resources :microposts do
-        put :sort
-    end
+
     
     
     get     '/login',   to: 'sessions#new'
