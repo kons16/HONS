@@ -38,12 +38,11 @@ textarea {
 
 /* footer */
 
-.footer{
-    border-top: 1px solid #EAEAEA;
-    padding: 10px 0;
-    margin-top: 5px;
-    position: absolute;
-    bottom: -100px;
-    width: 100%;
-    height: 50px;
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }

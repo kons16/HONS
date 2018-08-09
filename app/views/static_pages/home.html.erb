@@ -16,12 +16,27 @@
       <% if logged_in? %>
         
       <% else %>
-        <%= link_to "新規登録", signup_path, class: "btn" %>
+        <%= link_to "ユーザー登録", signup_path, class: "btn" %>
       <% end %>
-        
-      <%= render 'layouts/header' %>
       
+      <%= render 'layouts/header' %>
     </div>
+    
+    <div class="setsumei">
+      <p>読んだ本を管理しよう！</p>
+      <p> HONS(ホンズ)を使えば、紙媒体、電子媒体問わず、<br/>
+          今まで読んだ本をお手軽に管理できます。</p>
+    </div>
+    
+    <div class="footer">
+      <ul class="footer__item">
+        <%= link_to "お問い合わせ", "/contact" %>
+        <small>
+          &copy; 2018 HONS.
+        </small>
+      </ul>
+    </div>
+    
   </body>
   
 </html>
