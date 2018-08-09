@@ -23,6 +23,10 @@ Rails.application.routes.draw do
         end
     end
     
+    resources :microposts do
+        put :sort
+    end
+    
     
     get     '/login',   to: 'sessions#new'
     post    '/login',   to: 'sessions#create'

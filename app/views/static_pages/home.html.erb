@@ -12,7 +12,7 @@
   <body>
     <div class="cover">
       <img src="/images/backg2.jpg" class="topimage">
-      <h1><div class="icon"><%= image_tag '/images/bookicon.png', :size =>'88x80'%></div><div class="titlename">HONS</div></h1>
+      <h1><div class="icon"><%= image_tag '/images/bookicon3.png', :size =>'88x80'%></div><div class="titlename">HONS</div></h1>
       <% if logged_in? %>
         
       <% else %>
@@ -23,18 +23,20 @@
     </div>
     
     <div class="setsumei">
-      <p>読んだ本を管理しよう！</p>
+      <p>読んだ本を記録しよう！</p>
       <p> HONS(ホンズ)を使えば、紙媒体、電子媒体問わず、<br/>
           今まで読んだ本をお手軽に管理できます。</p>
     </div>
     
     <div class="footer">
-      <ul class="footer__item">
         <%= link_to "お問い合わせ", "/contact" %>
         <small>
-          &copy; 2018 HONS.
+          <p style="text-align:end;">&copy; 2018 HONS.</p>
         </small>
-      </ul>
+    </div>
+    
+    <div class="tweet">
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="HONS 読んだ本を記録しよう!" data-url="https://honsss.herokuapp.com/" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     
   </body>
