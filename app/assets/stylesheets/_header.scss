@@ -8,3 +8,13 @@
   position: relative;
   left: -100px;
 }
+
+@media screen and (min-width:0px) and (max-width:620px) {
+  .navbar-right{
+    text-align: right;
+  }
+  .navbar-brand{
+    position: relative;
+    left: 10px;
+  }
+}

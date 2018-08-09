@@ -1,6 +1,12 @@
-<div class="itemposition">
-<h1>新規登録</h1>
-<br /><br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+    <div class="itemposition">
+    <h1>新規登録</h1>
+    <br /><br />
     <%= form_for(@user, url: signup_path) do |f| %>
     <%= render 'shared/error_messages' %>
       
@@ -28,4 +34,7 @@
       
       
     <% end %>
-</div>
+  </div>
+  <body>
+  
+</html>
