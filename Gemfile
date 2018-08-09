@@ -19,6 +19,7 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'ranked-model'
 gem 'mechanize', require: 'mechanize'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
