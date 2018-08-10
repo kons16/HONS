@@ -1,9 +1,39 @@
 /* header */
-@import "bootstrap";
-.navbar-brand{
-  position: relative;
-  left: -100px;
-}
 
 @media screen and (min-width:0px) and (max-width:620px) {
+  
+  .container {
+    position: fixed;
+    z-index: 10;
+    height: 10px;
+  }
+  
+  .navlist-hondana {
+    position: relative;
+    top:  -54px;
+    right: -110px;
+  }
+
+  .navlist-add {
+    position: relative;
+    top:  -94px;
+    right: -170px;
+  }
+
+  .navlist-setting {
+    visibility:hidden;
+  }
+
+  .navlist-logout {
+    position: relative;
+    top:  -174px;
+    right: -250px;
+  }
+  
+  
+  .navlist-login {
+    position: relative;
+    top:  -54px;
+    right: -280px;
+  }
 }

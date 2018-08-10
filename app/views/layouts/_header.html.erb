@@ -4,31 +4,18 @@
         <div class="navbar-header">
           
           <a class="navbar-brand" href="/">HONS</a>
-
-            <!-- toggle -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
         </div>
-
-        <!-- メニュー -->
-        <div class="collapse navbar-collapse" id="top-nav">
 
             <ul class="nav navbar-nav navbar-right">
                   <% if logged_in? %>
-                    <li><%= link_to "本棚", current_user %></li>
-                    <li><%= link_to "本を追加", new_micropost_path %></li>
-                    <li><%= link_to "アカウント設定", edit_user_path(current_user) %></li>
-                    <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+                    <li class="navlist-hondana"><%= link_to "本棚", current_user %></li>
+                    <li class="navlist-add"><%= link_to "本を追加", new_micropost_path %></li>
+                    <li class="navlist-setting"><%= link_to "アカウント設定", edit_user_path(current_user) %></li>
+                    <li class="navlist-logout"><%= link_to "ログアウト", logout_path, method: :delete %></li>
                   <% else %>
-                    <li><%= link_to "ログイン", login_path %></li>
+                    <li class="navlist-login"><%= link_to "ログイン", login_path %></li>
                   <% end %>
             </ul>
-        </div>
+            
     </div>
-    <!-- end container -->
 </nav>
-<!-- end nav -->
