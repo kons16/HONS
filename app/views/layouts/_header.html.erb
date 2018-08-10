@@ -3,10 +3,11 @@
     <div class="container">
         <div class="navbar-header">
           
-          <a class="navbar-brand" href="/">TITLE</a>
+          <a class="navbar-brand" href="/">HONS</a>
 
             <!-- toggle -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
+                <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
@@ -17,8 +18,15 @@
         <div class="collapse navbar-collapse" id="top-nav">
 
             <ul class="nav navbar-nav navbar-right">
-              <li>aaa</li>
-              <li>bbb</li>
+                  <% if logged_in? %>
+                    <li><%= link_to "本棚", current_user %></li>
+                    <li><%= link_to "ランキング", ranking_path %></li>
+                    <li><%= link_to "アカウント設定", edit_user_path(current_user) %></li>
+                    <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+                  <% else %>
+                    <li><%= link_to "ログイン", login_path %></li>
+                    <li><%= link_to "ランキング", ranking_path %></li>
+                  <% end %>
             </ul>
         </div>
     </div>

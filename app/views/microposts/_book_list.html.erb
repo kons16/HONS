@@ -1,16 +1,13 @@
 <% if @books.present? %>
-  <h2>検索結果</h2>
   <% @books.each do |book| %>
-    <div class="list">
       <%= form_for(@micropost) do |f| %>
         <%= link_to (image_tag(book.image_url, style: "width: 70px;height: 100px;display: inline-block;")), book.url, :target=>["_blank"] %>
-        <%= book.title %>
+        <div id="kensakutitle"><%= book.title %></div>
         <%= f.hidden_field :content, value: book.url %>
         <%= f.hidden_field :title, value: book.title %>
         <%= f.hidden_field :imagecont, value: book.image_url %>
-        <%= f.submit "本棚に追加" %>
+        <%= f.submit "本棚に追加" , id:"addhondana" %>
         
       <% end %>
-    </div>
   <% end %>
 <% end %>

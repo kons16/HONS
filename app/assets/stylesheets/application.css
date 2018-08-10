@@ -120,12 +120,12 @@ body {
 .addbookbtn {
   position: relative;
   z-index: 2;
-  top: 552px;
+  top: 555px;
   left: -600px;
   text-decoration:none;
   padding: 8px 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 17px;
   background-color: #996633;
   color: #fff;
 }
@@ -185,7 +185,7 @@ input, textarea, select, .uneditable-input {
 }
 
 input {
-  height: 30px;
+  height: 40px
 }
 
 
@@ -315,6 +315,60 @@ hr.s3 {
 }
 
 
+/* 本を検索 */
+.kensaku {    
+    position:relative;
+    left: 10px;
+    text-decoration:none;
+    font-size: 15px;
+    padding: 7px 15px;
+    border-radius: 10px;
+    background-color: #254380;
+    color: #fff;
+}
+
+.kensaku:hover {
+    background-color: #59b1eb;
+    text-decoration: none;
+}
+
+/* 本棚に追加ボタン */
+#addhondana {
+  position: relative;
+  left: 450px;
+  top: -80px;
+  width: 130px;
+  height: 50px;
+  margin-bottom: -40px;
+  text-decoration:none;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #996633;
+  color: #fff;
+}
+
+#addhondana:hover {
+    background-color: #CC6600;
+    text-decoration: none;
+}
+
+/* 検索結果 */
+#book_list {
+  position: relative;
+  display: grid;
+  top: 30px;
+  padding-left: 400px;
+  grid-template-columns: repeat(1, 150px);
+}
+
+#kensakutitle {
+  position: relative;
+  height: 10px;
+  width: 300px;
+  left: 130px;
+  top: -70px;
+}
+
 
 /* スマホ対応  */
 @media screen and (min-width:0px) and (max-width:620px) {
@@ -337,7 +391,7 @@ hr.s3 {
   .titlename {
     position:absolute;
     top: 150px;
-    left: 100px;
+    left: 95px;
     color: #254380;
     font-size: 70px;
   }
