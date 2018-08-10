@@ -198,7 +198,7 @@ input {
 .loginsave {
   position: relative;
   left: 100px;
-  top: 8px;
+  top: 13px;
 }
 
 #session_remember_me {
@@ -210,7 +210,7 @@ input {
 #list {
   position: relative;
   display: grid;
-  top: -10px;
+  top: 15px;
   padding-left: 20px;
   grid-template-columns: repeat(7, 90px);
   grid-column-gap: 20px;
