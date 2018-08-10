@@ -19,7 +19,7 @@ body {
   margin:0;
   padding:0;
   text-align: center;
-  background-color: #EAEAEA;
+  background-color: #f2f2f2;
   font-size: 15px;
   font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
 }
@@ -223,18 +223,37 @@ input {
 
 #bookimg {
   position: absolute;
+  top: 120px;
   right: 400px;
-  top: 80px;
   font-size: 120%;
   font-weight: bold;
 }
 
 #booktitle {
   position: absolute;
-  top: 370px;
+  top: 140px;
+  right: 90px;
   font-size: 120%;
   font-weight: bold;
-  right: 350px;
+  width: 300px;
+  word-wrap: break-word;
+}
+
+#bookauthor {
+  position: absolute;
+  top: 290px;
+  right: 100px;
+  font-size: 120%;
+  font-weight: bold;
+  width: 300px;
+  word-wrap: break-word;
+}
+#bookrelease {
+  position: absolute;
+  top: 330px;
+  right: 100px;
+  font-size: 120%;
+  font-weight: bold;
   width: 300px;
   word-wrap: break-word;
 }
@@ -275,8 +294,8 @@ input {
 /* 本をクリックしたときのアマゾン詳細リンク  */
 .amalink {
   position: absolute;
-  top: 310px;
-  right: 220px;
+  top: 410px;
+  right: 400px;
   z-index: 2;
 }
 

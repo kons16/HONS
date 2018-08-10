@@ -17,6 +17,8 @@ class BookController < ApplicationController
         item.get('ItemAttributes/Title'),
         item.get('LargeImage/URL'),
         item.get('DetailPageURL'),
+        item.get('ItemAttributes/Author'),
+        item.get('ItemAttributes/PublicationDate')
       )
       @booksrank << bookrank
     end

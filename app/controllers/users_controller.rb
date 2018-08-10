@@ -44,22 +44,9 @@ class UsersController < ApplicationController
     @booktitle = params[:booktitle]
     @bookimg = params[:bookimg]
     @url = params[:bookurl]
+    @author = params[:bookauthor]
+    @release = params[:bookrelease]
   end
-  
-  def bookreview
-    @url = params[:bookurl]
-    
-    agent = Mechanize.new
-    page = agent.get(@url)
-
-    divcla = page.search('//div[@class="a-section a-spacing-none"]')[5]
-    # 発売日
-    @day = divcla.search('//span[@class="a-size-medium a-color-secondary a-text-normal"]')[1]
-    # 著者
-    a = page.search('//td[@class="a-size-base"]')
-    @author = a.search('//span[@class="a-size-medium"]')
-  end
-
 
   private
 

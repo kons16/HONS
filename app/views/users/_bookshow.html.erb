@@ -1,3 +1,5 @@
 <div id='bookimg'><%= image_tag(@bookimg, style: "width: 180px;height: 257px;display: inline-block;") %></div>
 <div id='booktitle'><p><%= @booktitle %></p></div>
+<div id='bookauthor'><p><%= @author %></p></div>
+<div id='bookrelease'><p><%= @release %></p></div>
 <%= link_to (image_tag("/images/ama.png", style: "width: 163px; height: 25px; display: inline-block;")), @url, :target=>["_blank"], class:"amalink" %>

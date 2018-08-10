@@ -23,13 +23,15 @@ class MicropostsController < ApplicationController
         power: "Not kindle"
       )
 
-      # 本のタイトル,画像URL, 詳細ページURLの取得
+      # 本のタイトル,画像URL, 詳細ページURL, 著者, 発売日の取得
       @books = []
       books.items.each do |item|
         book = Book.new(
           item.get('ItemAttributes/Title'),
           item.get('LargeImage/URL'),
           item.get('DetailPageURL'),
+          item.get('ItemAttributes/Author'),
+          item.get('ItemAttributes/PublicationDate')
         )
         @books << book
       end
@@ -62,7 +64,7 @@ class MicropostsController < ApplicationController
   private
 
     def micropost_params
-      params.require(:micropost).permit(:content, :title, :imagecont, :content)
+      params.require(:micropost).permit(:content, :title, :imagecont, :auth, :release)
     end
     
     def correct_user

@@ -22,8 +22,6 @@ Rails.application.routes.draw do
             get 'bookreview'
         end
     end
-
-    
     
     get     '/login',   to: 'sessions#new'
     post    '/login',   to: 'sessions#create'
