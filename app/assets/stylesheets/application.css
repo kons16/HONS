@@ -164,7 +164,7 @@ body {
 
 .btn_new {
   position:relative;;
-  top:80px;
+  top: 20px;
   height: 50px;
   text-decoration:none;
   font-size: 1.4em;
@@ -185,7 +185,7 @@ input, textarea, select, .uneditable-input {
 }
 
 input {
-  height: 40px
+  height: 32px
 }
 
 
@@ -198,7 +198,7 @@ input {
 .loginsave {
   position: relative;
   left: 100px;
-  top: 13px;
+  top: 9px;
 }
 
 #session_remember_me {
@@ -305,7 +305,7 @@ hr.s1 {
    height: 4px;
    background-color: #D2691E;
    border-radius: 20px;
-   width: 53%;
+   width: 770px;
    left: 15px;
    top: 190px;
    border: none;
@@ -316,7 +316,7 @@ hr.s2 {
    height: 4px;
    background-color: #D2691E;
    border-radius: 20px;
-   width: 53%;
+   width: 770px;
    left: 15px;
    top: 370px;
    border: none;
@@ -327,7 +327,7 @@ hr.s3 {
    height: 4px;
    background-color: #D2691E;
    border-radius: 20px;
-   width: 53%;
+   width: 770px;
    left: 15px;
    top: 550px;
    border: none;
@@ -457,7 +457,7 @@ hr.s3 {
   
   .btn_new {
     position:relative;;
-    top:10px;
+    top: 10px;
     width: 200px;
     height: 50px;
     text-decoration:none;
@@ -483,5 +483,5 @@ hr.s3 {
   input {
     height: 30px;
   }
-  
+
 }

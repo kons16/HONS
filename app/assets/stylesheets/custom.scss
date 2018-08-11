@@ -43,6 +43,14 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
+}
+
+
+/*エラー処理 */
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+  }
 }

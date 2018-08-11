@@ -20,7 +20,7 @@ class UsersController < ApplicationController
       flash[:notice]="新規登録が完了しました"
       redirect_to @user
     else
-      
+      render 'new'
     end
   end
   
