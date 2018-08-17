@@ -221,6 +221,7 @@ input {
   height: 60px;
 }
 
+
 #bookimg {
   position: absolute;
   top: 120px;
@@ -482,6 +483,53 @@ hr.s3 {
 
   input {
     height: 30px;
+  }
+  
+  /* 本の画像  */
+  #bookimg {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    font-size: 120%;
+    font-weight: bold;
+  }
+  
+  #booktitle {
+    position: absolute;
+    top: 600px;
+    left: 190px;
+    font-size: 100%;
+    font-weight: bold;
+    width: 200px;
+    word-wrap: break-word;
+  }
+
+  #bookauthor {
+    position: absolute;
+    top: 780px;
+    left: 150px;
+    font-size: 100%;
+    font-weight: bold;
+    width: 300px;
+    word-wrap: break-word;
+  }
+  
+  #bookrelease {
+    position: absolute;
+    top: 810px;
+    left: 150px;
+    font-size: 100%;
+    font-weight: bold;
+    width: 300px;
+    word-wrap: break-word;
+  }
+  
+  .pagecon {
+    position: absolute;
+    top: -10px;
+    left: -170px;
+    width: 750px;
+    height: 10px;
   }
 
 }
