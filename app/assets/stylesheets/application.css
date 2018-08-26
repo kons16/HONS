@@ -261,7 +261,9 @@ input {
 
 
 .bookname {
+  position: absolute;
   width: 100px;
+  z-index: 10;
 }
 
 .pagecon {
@@ -300,17 +302,33 @@ input {
   z-index: 2;
 }
 
-
 hr.s1 {
-   position: absolute;
-   height: 4px;
-   background-color: #D2691E;
-   border-radius: 20px;
-   width: 770px;
-   left: 15px;
-   top: 190px;
-   border: none;
+    position: absolute;
+    left: 15px;
+    top: 190px;
+    left: 27px;
+    margin: 0 -10px;
+    padding: 10px 20px;
+    width: 730px;
+    height: 0px;
+    background: #88ccef;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
 }
+
+hr.s1up {
+    position:absolute;
+    top: 152px;
+    left: 16px;
+    width: 752px;
+    height: 0;
+    border-width:10px;
+    border-style:solid;
+    border-color:transparent;
+    border-bottom-color:#91daff;
+    z-index: 0;
+}
+
+
 
 hr.s2 {
    position: absolute;
