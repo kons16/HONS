@@ -311,7 +311,7 @@ input {
   font-family: fontawesome;
   content: "\f099";
   top: 460px;
-  right: 530px;
+  right: 520px;
   text-decoration: none;
   z-index: 10;
 }
@@ -322,10 +322,24 @@ input {
 
 .share-line {
   position: absolute;
-  font-size: 40px;
+  font-size: 42px;
   color:#00C300;
   top: 460px;
-  right: 480px;
+  right: 423px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.share-facebook:hover {
+  text-decoration: none;
+}
+
+.share-facebook {
+  position: absolute;
+  font-size: 40px;
+  color:#3B5998;
+  top: 460px;
+  right: 473px;
   text-decoration: none;
   z-index: 10;
 }
