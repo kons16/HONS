@@ -299,9 +299,41 @@ input {
 .amalink {
   position: absolute;
   top: 410px;
-  right: 400px;
+  right: 410px;
   z-index: 2;
 }
+
+/* 本をシェアボタン */
+.share-twitter {
+  position: absolute;
+  font-size: 40px;
+  color: #00aced;
+  font-family: fontawesome;
+  content: "\f099";
+  top: 460px;
+  right: 530px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.share-twitter:hover {
+  text-decoration: none;
+}
+
+.share-line {
+  position: absolute;
+  font-size: 40px;
+  color:#00C300;
+  top: 460px;
+  right: 480px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.share-line:hover {
+  text-decoration: none;
+}
+
 
 hr.s1 {
     position: absolute;
