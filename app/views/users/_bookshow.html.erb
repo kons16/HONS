@@ -11,6 +11,6 @@
 
 
 <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
-<a class="fab fa-twitter share-twitter" href="http://twitter.com/intent/tweet?url=https://honsss.herokuapp.com/&text=『<%= @booktitle %>』(<%= @author %>) を読みました。" target="_blank" ></a>
-<a class="fab fa-line share-line" href="http://line.me/R/msg/text/?『<%= @booktitle %>』(<%= @author %>) を読みました。%0D%0A https://honsss.herokuapp.com" target="_blank" ></a>
+<a class="fab fa-twitter share-twitter" href="http://twitter.com/intent/tweet?url=https://honsss.herokuapp.com/&text=『<%= @booktitle.gsub(/\(.+?\)/, "")%>』(<%= @author %>) を読みました。" target="_blank" ></a>
+<a class="fab fa-line share-line" href="http://line.me/R/msg/text/?『<%= @booktitle.gsub(/\(.+?\)/, "") %>』(<%= @author %>) を読みました。%0D%0A https://honsss.herokuapp.com" target="_blank" ></a>
 <a class="fab fa-facebook share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= @url %>" target="_blank" ></a>
