@@ -24,13 +24,6 @@ body {
   font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
 }
 
-@font-face {
-  font-family: 'sumaho';
-  src: font-url('/sfont.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .topimage {
     position: relative;
     top: 80px;
@@ -321,12 +314,6 @@ input {
   z-index: 2;
 }
 
-#share-text {
-  position: absolute;
-  top: 410px;
-  right: 200px;
-  font-family: 'sumaho';
-}
 
 /* 本をシェアボタン */
 .share-twitter {
