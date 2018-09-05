@@ -24,6 +24,13 @@ body {
   font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
 }
 
+@font-face {
+  font-family: 'sumaho';
+  src: font-url('/sfont.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .topimage {
     position: relative;
     top: 80px;
@@ -259,6 +266,17 @@ input {
   word-wrap: break-word;
 }
 
+#remoteback {
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  width: 550px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10%;
+  z-index: 0;
+}
+
 
 .bookname {
   position: absolute;
@@ -301,6 +319,13 @@ input {
   top: 410px;
   right: 410px;
   z-index: 2;
+}
+
+#share-text {
+  position: absolute;
+  top: 410px;
+  right: 200px;
+  font-family: 'sumaho';
 }
 
 /* 本をシェアボタン */
